@@ -38,7 +38,7 @@ define_ibex_controller({
                 assert(defaultOrder[i]==1||defaultOrder[i]==0, "elements of 'order' must be 0 or 1.");
             }
 
-            this.redo=dget(this.options, "redo", false);
+            this.redo=dget(this.options, "redo", true);
             assert(typeof(this.redo)===typeof(true), "Bad value for 'redo', must be true or false.");
 
             this.currentWord = 0;
@@ -74,13 +74,13 @@ define_ibex_controller({
                 this.words[this.currentWord]:this.alts[this.currentWord]);
             this.rightWord.html((this.order[this.currentWord]===0) ?
                 this.alts[this.currentWord]:this.words[this.currentWord]);
-            this.larrow.html("e");
-            this.rarrow.html("i");
+            this.larrow.html("F");
+            this.rarrow.html("J");
             this.error.html("");
             var x = this.utils.getValueFromPreviousElement("counter");
             if (x) this.wordsSoFar=x;
             else this.wordsSoFar=0;
-            this.counter.html("Words so far: "+this.wordsSoFar);
+            this.counter.html("Words so far in this block: "+this.wordsSoFar);
             this.mainDiv.css('text-align', 'center');
             this.arrow.append(this.larrow);
             this.arrow.append(this.rarrow);
@@ -97,11 +97,14 @@ define_ibex_controller({
                 var time = new Date().getTime();
                 var code = event.keyCode;
 
-                if (code == 69 || code==73) {
+                // 37 and 39 for left/right arrow keys
+                // 70 and 74 for F/J arrow keys
+
+                if (code == 70 || code == 74) {
                     var word = t.currentWord;
                     if (word <= t.stoppingPoint) {
-                        correct=((code==69 && t.order[word]==0)||
-                            (code==73 && t.order[word]==1)) ? "yes" : "no";
+                        correct=((code == 70 && t.order[word] == 0)||
+                            (code == 74 && t.order[word] == 1)) ? "yes" : "no";
                         if (!repeat){
                             var rs = t.mazeResults[word];
                             rs[0] = time;
@@ -154,7 +157,7 @@ define_ibex_controller({
                 this.rightWord.html((this.order[this.currentWord]===0) ?
                     this.alts[this.currentWord]:this.words[this.currentWord]);
                 this.wordsSoFar++;
-                this.counter.html("Words so far: "+this.wordsSoFar);
+                this.counter.html("Words so far in this block: "+this.wordsSoFar);
             }
         },
 
