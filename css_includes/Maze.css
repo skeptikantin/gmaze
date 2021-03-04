@@ -48,7 +48,7 @@
      font-size:100%;
      position: relative;
      color: darkolivegreen;
-     
+
 }
 .words {
      background-color: white;
@@ -71,7 +71,7 @@
      display: inline-block;
      margin-right: 2%;
      margin-left:20%;
-     
+
 }
 .rword {
      background-color: white;
@@ -80,7 +80,7 @@
      display: inline-block;
      margin-left: 2%;
      margin-right: 20%;
-     
+
 }
 
 .error {
@@ -93,13 +93,13 @@
      margin-left: 20%;
      margin-right: 20%;
      font-size: 150%;
-     
+
 }
 .parent {
 	background: gray;
   /* inline-block hack */
   font-size: 0;
-  
+
 }
 
 .child {
