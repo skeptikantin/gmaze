@@ -10,7 +10,7 @@ PennController.DebugOff();
 // Then comes the intermission
 // The actual experiment presents the sentences randomly, with a break after N sentences.
 // After that, send the results and finally show the trial labeled 'bye'.
-Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 6), "debrief", SendResults(), "goodbye")
+Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 4), "debrief", SendResults(), "goodbye")
 
 
 // What is in Header happens at the beginning of every single trial
@@ -108,7 +108,7 @@ Template("training_gmaze.csv", row =>
         ,
 
         newController("Maze", {s: row.Sentence, a: row.Distractor})
-            .css("font-size", "1.2em")
+            .css("font-size", "1em")
             .css("font-family", "Verdana")
             .print()
             .log()
@@ -137,7 +137,7 @@ newTrial("intermission" ,
         "Remember: try to be <strong>quick and accurate</strong>.</p>" +
         "<p>Some sentences will be quite complex, some will be simpler.</p>" +
         "<p>The task is fun, but also demanding, so there are designated<br/>" +
-        "breaks every 6 sentences.<br/></p>" +
+        "breaks every 4 sentences at which points you can pause if you want.<br/></p>" +
         "<p>(Please <strong>do not</strong> take a break <em>while</em> reading a sentence.)</p>")
         .css("font-family", "Verdana")
         .print()
