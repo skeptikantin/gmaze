@@ -65,7 +65,7 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Your task is to read sentences as fast as possible: to read, you are given two words at a time.<br/>"+
+    newText("<p>Your task is to read sentences as fast as possible: you are given two words at a time.<br/>"+
         "The words appear side by side, but only <strong>one</strong> of them is a possible continuation of the sentence.<br/>"+
         "In other words, you need to find a way through a maze:</p>")
         .css("font-size", "1em")
@@ -115,7 +115,7 @@ Template("training_gmaze.csv", row =>
             .wait()
             .remove()
             .test.passed()
-            .failure(newText("<br/>oops!").css("font-size", "1.5em").css("color", "red").print())
+            .failure(newText("<br/>oops!").css("font-size", "1em").css("color", "red").print())
             //.success(newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
             .success(getVar("training_successes").set(v => v + 1), newText("<br/>great!").css("font-size", "1.5em").css("color", "green").print())
 
@@ -123,9 +123,10 @@ Template("training_gmaze.csv", row =>
         newTimer(500).start().wait()
     )
         // logs additional variables in sentence file (e.g., Fun)
-        .log("Id", row.Id)
+        .log("ExpId", row.ExpId) // the experiment ID
+        .log("Id", row.Id) // the sentence ID (unique for each experiment)
         .log("Group", row.Group)
-        .log("ExpId", row.ExpId)
+
     ,
 
 ) // defines template for the main experiment
@@ -133,9 +134,9 @@ Template("training_gmaze.csv", row =>
 newTrial("intermission" ,
 
     newText("<p>Well done, you should be good to go.<br/>" +
-        "Remember: try to be quick <strong>and</strong> accurate.</p>" +
+        "Remember: try to be <strong>quick and accurate</strong>.</p>" +
         "<p>Some sentences will be quite complex, some will be simpler.</p>" +
-        "<p>The task is mostly fun, but also demanding, so there are designated<br/>" +
+        "<p>The task is fun, but also demanding, so there are designated<br/>" +
         "breaks every 6 sentences.<br/></p>" +
         "<p>(Please <strong>do not</strong> take a break <em>while</em> reading a sentence.)</p>")
         .css("font-family", "Verdana")
@@ -182,9 +183,9 @@ Template("gmaze.csv", row =>
             .wait()
     )
         // logs additional variables in sentence file (e.g., Fun)
+        .log("ExpId", row.ExpId)
         .log("Id", row.Id)
         .log("Group", row.Group)
-        .log("ExpId", row.ExpId)
     ,
     newTrial("break",
 
@@ -208,7 +209,7 @@ newTrial("debrief",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Before you go, we'd appreciate it if you take a brief moment to provide voluntary feedback.<br/>" +
+    newText("<p>We'd be very happy if you take a short moment to provide brief, voluntary feedback.<br/>" +
         "This information will help us with the evaluation of the results.</p>")
         .css("font-family", "Verdana")
         .print()
@@ -271,7 +272,7 @@ newTrial("goodbye",
         .center()
         .print()
     ,
-    newText("<p><strong>Our feedback</strong>: The task you just did tries to measure how we process sentences<br/>"+
+    newText("<p><strong>Our feedback</strong>: The task tries to measure how we process sentences<br/>"+
         "of varying (presumed) complexity. Trivially, more complex sentences take longer to read, but complexity<br/>"+
         "comes in various forms and can be located in different parts of a sentence. Maze experiments<br/>"+
         "help us learn more about how people understand and process language (well at least a tiny bit!).</p>")
