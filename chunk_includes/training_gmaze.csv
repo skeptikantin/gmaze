@@ -1,9 +1,5 @@
-﻿ExpId,Id,Sentence,Distractor,Group
-train,T1,Today is a good day for an experiment.,x-x-x lord dad whom died knew vs constitute.,train
-train,T2,The experimenters hope that you are well.,x-x-x characterised holy cent jack pre mark.,train
-train,T3,The experiment should be fun for everybody.,x-x-x accomplish minute oh hear lady purchased.,train
-train,T4,The class was taught online this fall.,x-x-x aware okay extent forget cool tons.,train
-train,T5,The teacher will return the exams tomorrow.,x-x-x somehow cool senate fell circa republic.,train
-train,T6,Everybody wondered if the outrage was justified.,x-x-x offender lady eat firstly pre cathedral.,train
-train,T7,The holiday season is weird this year.,x-x-x handled stupid hear firms join anti.,train
-train,T8,This is the last training sentence.,x-x-x them eyes came answered precious.,train
+﻿ExpId,Id,Sentence,Distractor,Group,Type
+train,T1,Today is a good day for an experiment.,x-x-x lord dad whom died knew vs constitute.,train,train
+train,T2,The experimenters hope that you are well.,x-x-x characterised holy cent jack pre mark.,train,train
+train,T3,The experiment should be fun for everybody.,x-x-x accomplish minute oh hear lady purchased.,train,train
+train,T4,The class was taught online this fall.,x-x-x aware okay extent forget cool tons.,train,train
