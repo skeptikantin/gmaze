@@ -137,7 +137,7 @@ newTrial("intermission" ,
         "<p>Some sentences will be quite complex, some will be simpler.</p>" +
         "<p>The task is mostly fun, but also demanding, so there are designated<br/>" +
         "breaks every 6 sentences.<br/></p>" +
-        "<p>(Please <strong>do not</strong> take a break <em>while</em> reading a sentence.</p>")
+        "<p>(Please <strong>do not</strong> take a break <em>while</em> reading a sentence.)</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -173,8 +173,8 @@ Template("gmaze.csv", row =>
             .wait()
             .remove()
             .test.passed()
-            .failure(newText("<br/>oops!").css("font-size", "1.2em").css("color", "red").print())
-            .success(newText("<br/>great!").css("font-size", "1.2em").css("color", "green").print())
+            .failure(newText("<br/>oops!").css("font-size", "1em").css("color", "red").print())
+            .success(newText("<br/>great!").css("font-size", "1em").css("color", "green").print())
 
         ,
         newTimer(500)
@@ -188,7 +188,7 @@ Template("gmaze.csv", row =>
     ,
     newTrial("break",
 
-        newText("<p>Well done, you've earned a little rest if you want.</p>" +
+        newText("<p>Well done, you've can take a short break if you want.</p>" +
             "Press SPACE to continue.")
             .css("font-family", "Verdana")
             .center()
@@ -254,7 +254,7 @@ newTrial("debrief",
         .print()
     ,
 
-    newButton("send", "Send results & proceed to verification link")
+    newButton("send", "Save results & proceed to verification link")
         .size(300)
         .center()
         .print()
@@ -268,14 +268,16 @@ newTrial("goodbye",
     newText("<p>That's it, thank you very much for your time and effort!</p>")
         .css("font-size", "1.2em")
         .css("font-family", "Verdana")
+        .center()
         .print()
     ,
-    newText("<p><strong>Our feedback</strong>: The task you just did tries to measure how we process sentences"+
-        "of varying (presumed) complexity. Trivially, more complex sentences take longer to read, but complexity"+
-        "comes in various forms and can be located in different parts of a sentence. Maze experiments"+
+    newText("<p><strong>Our feedback</strong>: The task you just did tries to measure how we process sentences<br/>"+
+        "of varying (presumed) complexity. Trivially, more complex sentences take longer to read, but complexity<br/>"+
+        "comes in various forms and can be located in different parts of a sentence. Maze experiments<br/>"+
         "help us learn more about how people understand and process language (well at least a tiny bit!).</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
+        .center()
         .print()
     ,
     newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=8B2C141F'>Click here to return to Prolific to validate your participation.</a></strong>")
@@ -283,7 +285,7 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p><br/>You can contact the corresponding researcher <a href='https://www.sfla.ch/' target='_blank'>here</a> (opens new tab).</p>")
+    newText("<p><br/>You can find info on the corresponding researcher <a href='https://www.sfla.ch/' target='_blank'>here</a> (opens new tab).</p>")
         .css("font-size", ".8em")
         .css("font-family", "Verdana")
         .print()
