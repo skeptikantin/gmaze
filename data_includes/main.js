@@ -2,15 +2,20 @@
 // Find a tutorial and the list of availalbe elements at:
 // https://www.pcibex.net/documentation/
 
-PennController.ResetPrefix(null) // Shorten command names (keep this line here)
+PennController.ResetPrefix(null); // Shorten command names (keep this line here)
 PennController.DebugOff();
+SetCounter("inc", 1); // so that the counter is reset at every participant for more equal distribution
 
 
 // Show the 'intro' trial first, then the training items in random order
 // Then comes the intermission
 // The actual experiment presents the sentences randomly, with a break after N sentences.
 // After that, send the results and finally show the trial labeled 'bye'.
-Sequence("intro", "instructions", "training", "intermission", sepWithN( "break" , randomize("experiment") , 4), "debrief", SendResults(), "goodbye")
+Sequence("intro",
+    "instructions",
+    /* "training", */
+    "intermission",
+    sepWithN( "break" , randomize("experiment") , 4), "debrief", SendResults(), "goodbye")
 
 
 // What is in Header happens at the beginning of every single trial
@@ -103,7 +108,7 @@ Template("training_gmaze.csv", row =>
 
         newVar("training_successes", 0)
             .global()
-            .test.is(v => v > 2)
+            .test.is(v => v > 1)
             .success(end())
         ,
 
@@ -269,7 +274,6 @@ newTrial("goodbye",
     newText("<p>That's it, thank you very much for your time and effort!</p>")
         .css("font-size", "1.2em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newText("<p><strong>Our feedback</strong>: The task tries to measure how we process sentences<br/>"+
@@ -278,7 +282,6 @@ newTrial("goodbye",
         "help us learn more about how people understand and process language (well at least a tiny bit!).</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
-        .center()
         .print()
     ,
     newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=8B2C141F'>Click here to return to Prolific to validate your participation.</a></strong>")
