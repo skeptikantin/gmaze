@@ -23,8 +23,6 @@
      width: 1000px;
      display: block;
 }
-
-/* The left and right key indicators */
 .larrow {
      background-color: white;
      width: 5%;
@@ -33,10 +31,10 @@
      padding-bottom: 0%;
      display: inline-block;
      margin-right: 10%;
-     margin-left: 27%;
+     margin-left:27%;
      font-size: 100%;
      position: relative;
-     color: grey;
+     color: darkolivegreen;
 }
 .rarrow {
      background-color: white;
@@ -47,12 +45,11 @@
      display: inline-block;
      margin-left: 10%;
      margin-right: 27%;
-     font-size: 100%;
+     font-size:100%;
      position: relative;
-     color: grey;
-
+     color: darkolivegreen;
+     
 }
-/* The words shown */
 .words {
      background-color: white;
      float: center;
@@ -74,7 +71,7 @@
      display: inline-block;
      margin-right: 2%;
      margin-left:20%;
-
+     
 }
 .rword {
      background-color: white;
@@ -83,10 +80,9 @@
      display: inline-block;
      margin-left: 2%;
      margin-right: 20%;
-
+     
 }
 
-/* When wrong button is pressed */
 .error {
      background-color: white;
      color: red;
@@ -96,14 +92,14 @@
      display: inline-block;
      margin-left: 20%;
      margin-right: 20%;
-     font-size: 80%;
-
+     font-size: 150%;
+     
 }
 .parent {
 	background: gray;
   /* inline-block hack */
   font-size: 0;
-
+  
 }
 
 .child {
