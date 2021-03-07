@@ -108,7 +108,7 @@ Template("training_gmaze.csv", row =>
 
         newVar("training_successes", 0)
             .global()
-            .test.is(v => v > 1)
+            .test.is(v => v > 2)
             .success(end())
         ,
 
@@ -161,7 +161,12 @@ Template("gmaze.csv", row =>
     newTrial("experiment",
 
         // add, temporarily, an ID to check where alternatives are ambiguous
-        newText("ExpId", row.Type)
+        newText("ExpId", row.ExpId)
+            .css("font-family", "Verdana")
+            .center()
+            .print()
+        ,
+        newText("ExpId", row.Id)
             .css("font-family", "Verdana")
             .center()
             .print()
