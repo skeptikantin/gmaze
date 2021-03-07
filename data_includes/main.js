@@ -13,9 +13,9 @@ SetCounter("inc", 1); // so that the counter is reset at every participant for m
 // After that, send the results and finally show the trial labeled 'bye'.
 Sequence("intro",
     "instructions",
-    /* "training", */
+    "training",
     "intermission",
-    sepWithN( "break" , randomize("experiment") , 4), "debrief", SendResults(), "goodbye")
+    sepWithN( "break" , randomize("experiment") , 8), "debrief", SendResults(), "goodbye")
 
 
 // What is in Header happens at the beginning of every single trial
@@ -87,7 +87,7 @@ newTrial("instructions" ,
         "<p><strong>Please try to be quick <em>and</em> accurate.</strong></p>" +
         "<p>Errors are okay, sometimes even expected. Just try to avoid too many errors<br/>" +
         "and pay close attention to what you are reading.</p>"+
-        "<p>We‘ll start with up to 5 practice sentences. Training ends early when you have<br/>" +
+        "<p>We’ll start with up to 5 practice sentences. Training ends early when you have<br/>" +
         "successfully mazed through 3 sentences (it will then take a few seconds to jump<br/>"+
         "the rest and load the main experiment).</p>")
         .css("font-size", "1em")
@@ -139,16 +139,16 @@ Template("training_gmaze.csv", row =>
 
 newTrial("intermission" ,
 
-    newText("<p>Well done, you should be good to go.<br/>" +
+    newText("<p>Alright, you should be good to go!<br/>" +
         "Remember: try to be <strong>quick and accurate</strong>.</p>" +
         "<p>Some sentences will be quite complex, some will be simpler.</p>" +
         "<p>The task is fun, but also demanding, so there are designated<br/>" +
-        "breaks every 4 sentences at which points you can pause if you want.<br/></p>" +
-        "<p>(Please <strong>do not</strong> take a break <em>while</em> reading a sentence.)</p>")
+        "breaks every 8 sentences at which points you can pause if you want.<br/></p>" +
+        "<p>Please <strong>do not</strong> take a break <em>while</em> reading a sentence.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Press SPACE when you are ready to proceed to the main experiment.</p>")
+    newText("<p>Press SPACE when you are ready to begin the main experiment.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -181,7 +181,7 @@ Template("gmaze.csv", row =>
             .remove()
             .test.passed()
             .failure(newText("<br/>oops!").css("font-size", "1em").css("color", "red").print())
-            .success(newText("<br/>great!").css("font-size", "1em").css("color", "green").print())
+            // .success(newText("<br/>great!").css("font-size", "1em").css("color", "green").print())
 
         ,
         newTimer(500)
@@ -210,7 +210,7 @@ Template("gmaze.csv", row =>
 
 newTrial("debrief",
 
-    newText("<p>That's (almost) it, thank you!</p>")
+    newText("<p>That’s (almost) it, thank you!</p>")
         .css("font-size", "1.2em")
         .css("font-family", "Verdana")
         .print()
@@ -272,13 +272,13 @@ newTrial("debrief",
 SendResults("send") // send results to server before good-bye message
 
 newTrial("goodbye",
-    newText("<p>That's it, thank you very much for your time and effort!</p>")
+    newText("<p>That’s it, thank you very much for your time and effort!</p>")
         .css("font-size", "1.2em")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p><strong>Our feedback</strong>: The task tries to measure how we process sentences<br/>"+
-        "of varying (presumed) complexity. Trivially, more complex sentences take longer to read, but complexity<br/>"+
+    newText("<p><strong>Our feedback</strong>: The task tries to measure how we process sentences of varying<br/>"+
+        "(presumed) complexity. Trivially, more complex sentences take longer to read, but complexity<br/>"+
         "comes in various forms and can be located in different parts of a sentence. Maze experiments<br/>"+
         "help us learn more about how people understand and process language (well at least a tiny bit!).</p>")
         .css("font-size", "1em")
