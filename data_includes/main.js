@@ -139,7 +139,7 @@ Template("training_gmaze.csv", row =>
 
 newTrial("intermission" ,
 
-    newText("<p>Alright, you should be good to go!<br/>" +
+    newText("<p>Alright, you should be good to go for the 32 experimental sentences!<br/>" +
         "Remember: try to be <strong>quick and accurate</strong>.</p>" +
         "<p>Some sentences will be quite complex, some will be simpler.</p>" +
         "<p>The task is fun, but also demanding, so there are designated<br/>" +
