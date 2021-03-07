@@ -82,8 +82,9 @@ newTrial("instructions" ,
         .center()
         .print()
     ,
-    newText("<p>Use the <strong>F</strong> and <strong>J</strong> keys to select the word that continues the sentence.<br/>" +
-        "If you pick the wrong word, you’ll see an error, but can try again to continue reading.</p>" +
+    newText("<p>Using your index fingers, press the <strong>F</strong> and <strong>J</strong> keys to select the<br/>" +
+        "word that continues the sentence. If you pick the wrong word, you’ll get an error, but you<br/>"+
+        "can then correct your choice to continue with the sentence.</p>" +
         "<p><strong>Please try to be quick <em>and</em> accurate.</strong></p>" +
         "<p>Errors are okay, sometimes even expected (and not necessarily a sign of unattentiveness).<br/>"+
         "Just try to avoid too many errors, so please pay close attention to what you are reading.</p>"+
@@ -147,7 +148,8 @@ newTrial("intermission" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Press SPACE when you are ready to begin the main experiment.</p>")
+    newText("<p>Place your index fingers on the F and J keys and<br/>"+
+        "press SPACE when you are ready to begin the main experiment.</p>")
         .css("font-family", "Verdana")
         .print()
     ,
@@ -194,7 +196,7 @@ Template("gmaze.csv", row =>
     ,
     newTrial("break",
 
-        newText("<p>Well done, you've can take a short break if you want.</p>" +
+        newText("<p>Well done, you can take a short break if you want.</p>" +
             "Press SPACE to continue.")
             .css("font-family", "Verdana")
             .center()
@@ -285,7 +287,7 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=8B2C141F'>Click here to return to Prolific to validate your participation.</a></strong>")
+    newText("<strong><a href='https://app.prolific.co/submissions/complete?cc=8BAD334F'>Click here to return to Prolific to validate your participation.</a></strong>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
