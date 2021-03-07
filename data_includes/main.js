@@ -162,12 +162,7 @@ Template("gmaze.csv", row =>
     newTrial("experiment",
 
         // add, temporarily, an ID to check where alternatives are ambiguous
-        newText("Id", row.Id)
-            .css("font-family", "Verdana")
-            .center()
-            .print()
-        ,
-        newText("ExpId", row.ExpId)
+        newText("ExpId", row.Type)
             .css("font-family", "Verdana")
             .center()
             .print()
