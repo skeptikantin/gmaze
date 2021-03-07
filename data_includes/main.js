@@ -83,13 +83,12 @@ newTrial("instructions" ,
         .print()
     ,
     newText("<p>Use the <strong>F</strong> and <strong>J</strong> keys to select the word that continues the sentence.<br/>" +
-        "If you pick the wrong word, you'll see an error, but can try again to continue reading.</p>" +
+        "If you pick the wrong word, you’ll see an error, but can try again to continue reading.</p>" +
         "<p><strong>Please try to be quick <em>and</em> accurate.</strong></p>" +
-        "<p>Errors are okay, sometimes even expected. Just try to avoid too many errors<br/>" +
-        "and pay close attention to what you are reading.</p>"+
-        "<p>We’ll start with up to 5 practice sentences. Training ends early when you have<br/>" +
-        "successfully mazed through 3 sentences (it will then take a few seconds to jump<br/>"+
-        "the rest and load the main experiment).</p>")
+        "<p>Errors are okay, sometimes even expected (and not necessarily a sign of unattentiveness).<br/>"+
+        "Just try to avoid too many errors, so please pay close attention to what you are reading.</p>"+
+        "<p>We’ll start with up to 5 practice sentences. Training ends when you have mazed successfully<br/>" +
+        "through 3 sentences (it will then take a few seconds to jump to the main experiment).</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
