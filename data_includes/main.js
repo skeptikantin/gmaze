@@ -82,14 +82,13 @@ newTrial("instructions" ,
         .center()
         .print()
     ,
-    newText("<p>Using your index fingers, press the <strong>F</strong> and <strong>J</strong> keys to select the<br/>" +
-        "word that continues the sentence. If you pick the wrong word, you’ll get an error, but you<br/>"+
-        "can then correct your choice to continue with the sentence.</p>" +
+    newText("<p>Using your index fingers, press the <strong>F</strong> and <strong>J</strong> keys to select the word that continues<br/>" +
+        "the sentence. If you pick the wrong word, you’ll get an error, but you can then correct<br/>"+
+        "your choice to continue with the sentence.</p>" +
         "<p><strong>Please try to be quick <em>and</em> accurate.</strong></p>" +
         "<p>Errors are okay, sometimes even expected (and not necessarily a sign of unattentiveness).<br/>"+
-        "Just try to avoid too many errors, so please pay close attention to what you are reading.</p>"+
-        "<p>We’ll start with up to 5 practice sentences. Training ends when you have mazed successfully<br/>" +
-        "through 3 sentences (it will then take a few seconds to jump to the main experiment).</p>")
+        "Just try to avoid too many, so please pay close attention to what you are reading.</p>"+
+        "<p>We’ll start with 3 practice sentences.</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -162,7 +161,7 @@ newTrial("intermission" ,
 Template("gmaze.csv", row =>
     newTrial("experiment",
 
-        // add, temporarily, an ID to check where alternatives are ambiguous
+        /* add, temporarily, an ID to check where alternatives are ambiguous
         newText("ExpId", row.ExpId)
             .css("font-family", "Verdana")
             .center()
@@ -172,7 +171,7 @@ Template("gmaze.csv", row =>
             .css("font-family", "Verdana")
             .center()
             .print()
-        ,
+        , */
         newController("Maze", {s: row.Sentence, a: row.Distractor})
             .css("font-size", "1em")
             .css("font-family", "Verdana")
