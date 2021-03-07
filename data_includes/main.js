@@ -141,8 +141,8 @@ newTrial("intermission" ,
     newText("<p>Alright, you should be good to go for the 32 experimental sentences!<br/>" +
         "Remember: try to be <strong>quick and accurate</strong>.</p>" +
         "<p>Some sentences will be quite complex, some will be simpler.</p>" +
-        "<p>The task is fun, but also demanding, so there are designated<br/>" +
-        "breaks every 8 sentences at which points you can pause if you want.<br/></p>" +
+        "<p>The task is fun, but also demanding, so there are designated breaks<br/>" +
+        "every 8 sentences at which points you can pause if you want.<br/></p>" +
         "<p>Please <strong>do not</strong> take a break <em>while</em> reading a sentence.</p>")
         .css("font-family", "Verdana")
         .print()
@@ -271,10 +271,11 @@ newTrial("goodbye",
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p><strong>Our feedback</strong>: The task tries to measure how we process sentences of varying<br/>"+
-        "(presumed) complexity. Trivially, more complex sentences take longer to read, but complexity<br/>"+
-        "comes in various forms and can be located in different parts of a sentence. Maze experiments<br/>"+
-        "help us learn more about how people understand and process language (well at least a tiny bit!).</p>")
+    newText("<p><strong>Our feedback</strong>: The task tries to measure how we process sentences of varying (presumed)<br/>"+
+        "complexity. Trivially, more complex sentences take longer to read, but complexity<br/>"+
+        "comes in various forms and can be located in different parts of a sentence. Maze<br/>"+
+        "experiments help us learn more about how people understand and process language<br/>"+
+        "(well at least a tiny bit!).</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
