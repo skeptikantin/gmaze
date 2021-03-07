@@ -70,9 +70,9 @@ newTrial("instructions" ,
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("<p>Your task is to read sentences as fast as possible: You are given two words<br/>"+
-        "at a time, which appear side by side – but only <strong>one</strong> of them is a possible <br/>"+
-        "continuation of the sentence. In other words, you need to find a way through a maze:</p>")
+    newText("<p>Your task is to read sentences as fast as possible: You are given two words at a<br/>"+
+        "time, which appear side by side – but only <strong>one</strong> of them is a possible continuation<br/>"+
+        "of the sentence. In other words, you need to find a way through a maze:</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
@@ -82,20 +82,20 @@ newTrial("instructions" ,
         .center()
         .print()
     ,
-    newText("<p>Use the <strong>F</strong> and <strong>J</strong> keys to select the word that<br/>" +
-        "continues the sentence. If you pick the wrong word, you'll see an error,<br/>"+
+    newText("<p>Use the <strong>F</strong> and <strong>J</strong> keys to select the word that continues<br/>" +
+        "the sentence. If you pick the wrong word, you'll see an error,<br/>"+
         "but you can try again to continue reading.</p>" +
         "<p><strong>Please try to be quick <em>and</em> accurate.</strong></p>" +
-        "<p>Errors are okay, sometimes even expected. But please try to avoid errors by paying<br/>" +
+        "<p>Errors are okay, sometimes even expected. Just try to avoid too many errors and pay<br/>" +
         "close attention to what you are reading.</p>"+
-        "<p>We'll start with up to 5 practice sentences. Training ends early when you have<br/>" +
-        "successfully mazed mazed through 3 sentences (it will then take a few seconds to jump<br/>"+
+        "<p>We‘ll start with up to 5 practice sentences. Training ends early when you have<br/>" +
+        "successfully mazed through 3 sentences (it will then take a few seconds to jump<br/>"+
         "the rest and load the main experiment).</p>")
         .css("font-size", "1em")
         .css("font-family", "Verdana")
         .print()
     ,
-    newText("Hit SPACE to continue to training sentences.")
+    newText("Press SPACE to continue to the training sentences.")
         .css("font-family", "Verdana")
         .print()
     ,
