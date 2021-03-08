@@ -1,33 +1,33 @@
 ﻿Group,ExpId,Id,Type,Sentence,Labels,Distractor
-C,gv,12,gv1,The father advised his son to save all the money.,det1 noun1 verb1 pron2 noun2 to verb adj3 det3 noun3,x-x-x anyway diverse she etc cent loss used yeah click.
-C,gv,16,gv2,Everybody likes to save all the money.,pron1 verb1 to verb adj2 det2 noun2,x-x-x mercy link funds anti mark gyrus.
-C,gv,17,gv3,The professor urged students to go talk to a counselor.,det1 noun1a verb1 noun1b to go verb to2 det2 noun2,x-x-x compare euros operated soul anti yet mm memory waterways.
-C,gv,21,gv4,The smart students often opt to go talk to a counselor.,det1 adj1 noun1 adv1 verb1 to go verb to2 det2 noun2,x-x-x apart admitted china troy baby mm wood etc died penetrate.
-C,gv,26,gv5,The company told customers to go send an email.,det1 noun1a verb1 noun1b to go verb det2 noun2,x-x-x anymore nobody achieve pre nor yeah miss saint.
-C,gv,30,gv6,The website has a button to go send a message.,det1 noun1 verb1 det2 noun2 to go verb det3 noun3,x-x-x anymore if else afford kids glad never etc realize.
-C,gv,35,gv7,The engineer instructed the apprentice to check the valve.,det1 noun1 verb1 det2 noun2 to verb det3 noun3,x-x-x moreover discomfort he worsen anti worst dab unite.
-C,gv,39,gv8,The engineer taught the apprentice to check the valve.,det1 noun1 verb1 det2 noun2 to verb det3 noun3,x-x-x barely extent they seriously deal lived can unite.
-C,subcat,3,subcat3,The CIA director confirmed the rumor once it had spread widely.,det1 adj1 noun1 verb det noun post1 post2 post3 post4 post5,x-x-x BRED diseases infection mind wears labour dad foot senate pounds.
-C,subcat,8,subcat7,The gossipy neighbor heard the story had never actually been true.,det1 adj1 noun1 verb det noun post1 post2 post3 post4 post5,x-x-x wharm horrific flower can whose max sir respond never percent.
-C,subcat,11,subcat11,The journal editor printed the article with beautiful pictures of the desert.,det1 adj1 noun1 verb det noun post1 post2 post3 post4 post5 post6,x-x-x imagine insane mature lose happens dad discover authorise god miss forgive.
-C,subcat,16,subcat15,The art critic wrote the article was a disaster for the artist.,det1 adj1 noun1 verb det noun post1 post2 post3 post4 post5 post6,x-x-x gone half yeah feet happens dad ago diseases lots met afford.
-C,subcat,19,subcat19,The weary traveler claimed the luggage had been stolen in Rome.,det1 adj1 noun1 verb det noun post1 post2 post3 post4 post5,x-x-x furms honoring premier ago whereby glad kid regard etc Euro.
-C,subcat,24,subcat23,The security guard confessed the robbery after a sleepless night.,det1 adj1 noun1 verb det noun post1 post2 post3 post4,x-x-x whatever trans medicinal yet fulfill miss rule regimes lots.
-C,subcat,27,subcat27,The novice plumber realized the mistake would cost some money.,det1 adj1 noun1 verb det noun post1 post2 post3 post4,x-x-x relies aqueous duration etc confirm year nations ago shall.
-C,subcat,32,subcat31,The school principal suspected the teenager of cheating in exams.,det1 adj1 noun1 verb det noun post1 post2 post3 post4,x-x-x anyway enrich miserable map hectares etc networks must shall.
-C,md,3,md2,The majority of people will probably believe the rumors.,det1 noun1a of1 noun1b mod adv verb det2 noun2,x-x-x whatever okay anyway they exciting amazing thing booked.
-C,md,8,md4,The angry customer will write a letter of complaint.,det1 adj1 noun1 mod verb det2 noun2a of2 noun2b,x-x-x yours download holy miles lake afford pre peninsula.
-C,md,9,md5,The proposed solutions would eventually make customer safety the new norm.,det1 adj1 noun1 mod adv verb noun2a noun2b det3 adj3 noun3,x-x-x ago wondering sweet healthcare lady never behalf sun ago vain.
-C,md,14,md7,The new law would require a lot of cooperation.,det1 adj1 noun1 mod verb det2 noun2a of2 noun2b,x-x-x those else crazy dressed ago yeah sir understands.
-C,md,18,md9,The smallest crack can turn into a large hole.,det1 adj1 noun1 mod verb prep2 det2 adj2 noun2,x-x-x secondly yours yes nobody wish ago weeks whom.
-C,md,21,md11,The smartest people can increasingly find themselves in big trouble.,det1 adj1 noun1 mod adv verb pron2 prep2 adj2 noun2,x-x-x obstruct harbor yeah commonwealth okay subsection too came helpful.
-C,md,28,md14,The arrogant nephew could appear ungrateful.,det1 adj1 noun1 mod verb adj2,x-x-x secondly exempt mouth occurs topography.
-C,md,31,md16,The arrogant niece could later look ungrateful.,det1 adj1 noun1 mod adv verb adj2,x-x-x suck windy miles china other dealership.
-C,mc,5,mc2,The joke about cats makes her laugh hard.,det1 noun1 prep2 noun2 make pron verb adj1,x-x-x deny china semi least but islands that.
-C,mc,16,mc4,The boss said that we need to make some important changes happen soon.,det1 noun1 verb1 comp2 pron2 verb2 to make det adj noun verb adv3,x-x-x gone glad mind but anti pre east hill describes becomes cities rose.
-C,mc,21,mc6,The sudden sounds always make me shiver a bit.,det1 adj1 noun1 adv1 make pronA verb det2 noun2,x-x-x behave posted senate lord fund bidder anti nor.
-C,mc,32,mc8,The cold weather today made my exposed knees tremble.,det1 adj1 noun1 adv1 make pronB adj noun verb,x-x-x deny anybody thank glad know justify warns forgery.
-C,mc,37,mc10,The skilfull journalist made her talk about the past.,det1 adj1 noun1 make pron verb prep2 det2 noun2,x-x-x abort suspicious luck who yeah shall both none.
-C,mc,48,mc12,The success of her parents made the talented girl start her own company.,det1 noun1a of pron1 noun1b make det adj noun verb pron2 adj2 noun2,x-x-x anymore miss guy bless hell guys goes else month sir etc happens.
-C,mc,53,mc14,The raging pandemic makes us store lots of food.,det1 adj1 noun1 make pron verb adv3 of3 noun3,x-x-x deploy husbands blue call sword ford all low.
-C,mc,64,mc16,The severe economic crisis made very poor people borrow a lot of money.,det1 adj1 noun1a noun1b make adv adj noun verb det2 adv2 of2 noun2,x-x-x anyway honestly ensure wait ask walk united closes god ago soul queen.
+D,gv,11,gv1,The father allowed his son to spend all the money.,det1 noun1 verb1 pron2 noun2 to verb adj3 det3 noun3,x-x-x anyway diverse she etc cent loss used yeah click.
+D,gv,15,gv2,Everybody likes to spend all the money.,pron1 verb1 to verb adj2 det2 noun2,x-x-x mercy link funds anti mark gyrus.
+D,gv,18,gv3,The professor urged students to go speak to a counselor.,det1 noun1a verb1 noun1b to go verb to2 det2 noun2,x-x-x compare euros operated soul anti yet mm memory waterways.
+D,gv,22,gv4,The smart students often opt to go speak to a counselor.,det1 adj1 noun1 adv1 verb1 to go verb to2 det2 noun2,x-x-x apart admitted china troy baby mm wood etc died penetrate.
+D,gv,25,gv5,The company told customers to go write an email.,det1 noun1a verb1 noun1b to go verb det2 noun2,x-x-x anymore nobody achieve pre nor yeah miss saint.
+D,gv,29,gv6,The website has a button to go write a message.,det1 noun1 verb1 det2 noun2 to go verb det3 noun3,x-x-x anymore if else afford kids glad never etc realize.
+D,gv,36,gv7,The engineer instructed the apprentice to test the valve.,det1 noun1 verb1 det2 noun2 to verb det3 noun3,x-x-x moreover discomfort he worsen anti worst dab unite.
+D,gv,40,gv8,The engineer taught the apprentice to test the valve.,det1 noun1 verb1 det2 noun2 to verb det3 noun3,x-x-x barely extent they seriously deal lived can unite.
+D,subcat,4,subcat3,The CIA director confirmed the rumor should have been stopped sooner.,det1 adj1 noun1 verb det noun post1 post2 post3 post4 post5,x-x-x BRED diseases infection mind wears labour dad foot senate pounds.
+D,subcat,7,subcat7,The gossipy neighbor heard the story about our ongoing family problems.,det1 adj1 noun1 verb det noun post1 post2 post3 post4 post5,x-x-x wharm horrific flower can whose max sir respond never percent.
+D,subcat,12,subcat11,The journal editor printed the article had been slanderous for the politician.,det1 adj1 noun1 verb det noun post1 post2 post3 post4 post5 post6,x-x-x imagine insane mature lose happens dad discover authorise god miss forgive.
+D,subcat,15,subcat15,The art critic wrote the article with little regard for the artist.,det1 adj1 noun1 verb det noun post1 post2 post3 post4 post5 post6,x-x-x gone half yeah feet happens dad ago diseases lots met afford.
+D,subcat,20,subcat19,The weary traveler claimed the luggage at the counter in Rome.,det1 adj1 noun1 verb det noun post1 post2 post3 post4 post5,x-x-x furms honoring premier ago whereby glad kid regard etc Euro.
+D,subcat,23,subcat23,The security guard confessed the robbery had been his own idea.,det1 adj1 noun1 verb det noun post1 post2 post3 post4 post5,x-x-x whatever trans medicinal yet fulfill miss rule regimes lots hear.
+D,subcat,28,subcat27,The novice plumber realized the mistake before calling the owner.,det1 adj1 noun1 verb det noun post1 post2 post3 post4,x-x-x relies aqueous duration etc confirm year nations ago shall.
+D,subcat,31,subcat31,The school principal suspected the teenager was telling the truth.,det1 adj1 noun1 verb det noun post1 post2 post3 post4,x-x-x anyway enrich miserable map hectares etc networks must shall.
+D,md,4,md2,The majority of people will believe the rumors.,det1 noun1a of1 noun1b mod verb det2 noun2,x-x-x whatever okay anyway they amazing thing booked.
+D,md,7,md4,The angry customer will perhaps write a letter of complaint.,det1 adj1 noun1 mod adv verb det2 noun2a of2 noun2b,x-x-x yours download holy billion miles lake afford pre peninsula.
+D,md,10,md5,The proposed solutions would make customer safety the new norm.,det1 adj1 noun1 mod verb noun2a noun2b det3 adj3 noun3,x-x-x ago wondering sweet lady never behalf sun ago vain.
+D,md,13,md7,The new law would already require a lot of cooperation.,det1 adj1 noun1 mod adv verb det2 noun2a of2 noun2b,x-x-x those else crazy awesome dressed ago yeah sir understands.
+D,md,17,md9,The smallest crack can actually turn into a large hole.,det1 adj1 noun1 mod adv verb prep2 det2 adj2 noun2,x-x-x secondly yours yes watching nobody wish ago weeks whom.
+D,md,22,md11,The smartest people can find themselves in big trouble.,det1 adj1 noun1 mod verb pron2 prep2 adj2 noun2,x-x-x obstruct harbor yeah okay subsection too came helpful.
+D,md,27,md14,The arrogant nephew could easily appear ungrateful.,det1 adj1 noun1 mod adv verb adj2,x-x-x secondly exempt mouth senate occurs topography.
+D,md,32,md16,The arrogant niece could look ungrateful.,det1 adj1 noun1 mod verb adj2,x-x-x suck windy miles other dealership.
+D,mc,4,mc1,The comment about his family made our new colleague feel uncomfortable.,det1 noun1 prep2 pron2 noun2 make pron adj noun verb adj1,x-x-x anymore china grow nobody hell bill else enforcing anti modifications.
+D,mc,13,mc4,The boss said that we need to make this happen soon.,det1 noun1 verb1 comp2 pron2 verb2 to make pron verb adv3,x-x-x gone glad mind but anti pre east west cities rose.
+D,mc,20,mc5,The uncle's behavior last Christmas made the entire family cringe in shame.,det1 noun1a noun1b adv1 noun1c make det adj noun verb prep3 noun3,x-x-x either somebody glad Countries sure yes except beyond syntax year seeks.
+D,mc,25,mc7,The thought of the upcoming exam makes him sweat already.,det1a noun1a of1 det1b adj1 noun1b make pron verb adv2,x-x-x imagine pre etc reviewed aids weird could creek airport.
+D,mc,40,mc10,The skillful journalist made the reluctant politician talk about the past.,det1 adj1 noun1 make det adj noun verb prep2 det2 noun2,x-x-x abort suspicious luck hill considers determines yeah shall will none.
+D,mc,41,mc11,The encouragement by teachers made him become an author.,det1 noun1a by noun1b make pron verb det2 noun2,x-x-x interfere hell operated lake yes volume vs missed.
+D,mc,56,mc14,The raging pandemic makes people at risk store lots of food.,det1 adj1 noun1 make nounA prep nounB verb adv3 of3 noun3,x-x-x deploy husbands blue posted dad soon sword ford all low.
+D,mc,61,mc16,The severe economic crisis made them borrow a lot of money.,det1 adj1 noun1a noun1b make pron verb det2 adv2 of2 noun2,x-x-x anyway honestly ensure wait guys closes god ago soul queen.
