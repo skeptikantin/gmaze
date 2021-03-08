@@ -86,7 +86,7 @@ newTrial("instructions" ,
         "the sentence. If you pick the wrong word, you’ll get an error, but you can then correct<br/>"+
         "your choice to continue with the sentence.</p>" +
         "<p><strong>Please try to be quick <em>and</em> accurate.</strong></p>" +
-        "<p>Errors are okay, sometimes even expected (and not necessarily a sign of unattentiveness).<br/>"+
+        "<p>Errors are okay, sometimes even expected (and not necessarily a sign of poor attention).<br/>"+
         "Just try to avoid too many, so please pay close attention to what you are reading.</p>"+
         "<p>We’ll start with 3 practice sentences.</p>")
         .css("font-size", "1em")
